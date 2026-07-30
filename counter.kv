@@ -1,0 +1,23 @@
+<CounterLayout>:
+    orientation: "vertical"
+    padding: 20
+    spacing: 20
+
+    Label:
+        text: str(root.count)
+        font_size: "64sp"
+
+    Button:
+        text: "+1"
+        font_size: "28sp"
+        on_release: root.increase()
+
+    Button:
+        text: "-1"
+        font_size: "28sp"
+        on_release: root.decrease()
+
+    Button:
+        text: "Reset"
+        font_size: "28sp"
+        on_release: root.reset()
